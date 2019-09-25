@@ -1,0 +1,3 @@
+# Photoshop-DebugTools
+Photoshopのスクリプトやエクステンション開発を行う時に便利なデバッグツールです。
+

@@ -16,6 +16,7 @@ PSDebugLog.prototype._execute = function(type,msg) {
 }
 
 PSDebugLog.prototype.log = function(msg) {
+	alert(msg);
 	this._execute("psdebuglog.log", msg);
 }
 PSDebugLog.prototype.info = function(msg) {

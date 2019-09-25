@@ -38,7 +38,6 @@ PSDebugLogInterface.initInterface = function(csInterface){
 PSDebugLogInterface.logger = function(type,msg){ eval(`console.${type}("${msg}");`); };
 
 (function () { 
-  console.log("PSDebugLogInterface.jsの読み込み");
   var csInterface = new CSInterface();
   PSDebugLogInterface.initInterface(csInterface);
 }());

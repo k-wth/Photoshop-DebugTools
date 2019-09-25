@@ -36,9 +36,13 @@
 							<Width>35</Width>
 							<Height>50</Height>
 						</MinSize>
+						<MaxSize>
+							<Width>500</Width>
+							<Height>2000</Height>
+						</MaxSize>
 						<Size>
 							<Width>350</Width>
-							<Height>300</Height>
+							<Height>500</Height>
 						</Size>
 					</Geometry>
 					<Icons>

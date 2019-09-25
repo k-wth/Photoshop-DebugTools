@@ -2,7 +2,16 @@
 /*global $, window, location, CSInterface, SystemPath, themeManager*/
 (function () {
 	'use strict';
-	var csInterface = new CSInterface();
+  var csInterface = new CSInterface();
+  var loader;
+  
+  var init = function()
+  {
+    loader = new JsxScriptLoader(csInterface,"/jsx/");
+    loader.scriptLoader("object_refrect_info");
+  }
+  
+  init();
 
 	var logger = function(type,msg){
     $("#psdebug-log-interface").append(`<span class="${type}"> > ${msg}</span>`);
@@ -37,4 +46,12 @@
       csInterface.evalScript(script); 
     }
   });
+
+  $("#psddebug-script-reflecter .script-reflecter").on("keypress",function(e){
+    if ( e.which == 13 ) {
+      var script = $(this).val();
+      loader.execute(`getObjectReflectionInfo("${script}");`);
+    }
+  });
+  
 }());

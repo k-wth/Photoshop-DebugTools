@@ -1,7 +1,7 @@
-// プロジェクトのjsxにコピーするなどして使用してください
 #target photoshop;
-#include '../lib/PSDebugLog/jsx/PSDebugLog.jsx';
+#include './PSDebugLog.jsx';
 
+// プロジェクトのjsxにコピーするなどして使用してください
 function myJSXScript() { 
 	debug = new PSDebugLog("hostscript");
   debug.log( "So far so good" );  
